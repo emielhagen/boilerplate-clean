@@ -1,215 +1,214 @@
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Airbnb home</title>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- Leave those next 4 lines if you care about users using IE8 -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
-
-    <body>
-
-     <div class="banner" style="background: linear-gradient(-225deg, rgba(0,0,31,0.8) 0%, rgba(0,0,21,0.8) 30%), url(images/fotobrug.jpg) fixed">
-
-      <div class="banner-content">
-        <h1>Emiel Hagen</h1>
-        <p>Fullstack webdeveloper</p>
-      </div>
-    </div>
-
-    <div class="wrapper-light-gray">
-    <div class="container padded">
-      <div class="row">
-        <div class="features text-center">
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            <div class="about">
-              <i class="fa fa-child fa-3x"></i>
-              <h2>About me</h2>
-            </div>
-          </div>
-          <div class="workex">
-            <div class="col-xs-12 col-sm-4 col-md-4">
-              <i class="fa fa-briefcase fa-3x"></i>
-              <h2>Work Experience</h2>
-            </div>
-          </div>
-          <div class="education">
-            <div class="col-xs-12 col-sm-4 col-md-4">
-              <i class="fa fa-graduation-cap fa-3x"></i>
-              <h2>Education</h2>
-            </div>
-          </div>
+      <div class="banner" style="background: linear-gradient(-225deg, rgba(0,0,31,0.8) 0%, rgba(0,0,21,0.8) 30%), url(images/fotobrug.jpg) fixed">
+        <div class="banner-content">
+          <h1>Emiel Hagen</h1>
+          <p>Fullstack webdeveloper</p>
         </div>
       </div>
-    </div>
-    </div>
 
-    <div class="wrapper-grey-padded">
-      <div class="container">
-        <h2 class="text-center">Projects</h2>
-        <div class="row">
-          <% data.flats.each do |owner, flat| %>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path flat.picture %>');">
-              <div class="card-category"><%= flat.city %></div>
-              <div class="card-description">
-                <h2><%= flat.name %></h2>
-                <p><%= flat.summary %></p>
+      <div class="wrapper-light-gray">
+        <div class="container padded">
+          <div class="row">
+            <div class="features text-center">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="about">
+                <a href="#about-me">
+                  <i class="fa fa-child fa-3x"></i>
+                  <h2>About me</h2>
+                  </a>
+                </div>
               </div>
-              <%= link_to "flats/#{owner}.html", "flats/#{owner}.html", class: "card-link" %>
+              <div class="workex">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <i class="fa fa-briefcase fa-3x"></i>
+                  <h2>Work Experience</h2>
+                </div>
+              </div>
+              <div class="education">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <i class="fa fa-graduation-cap fa-3x"></i>
+                  <h2>Education</h2>
+                </div>
+              </div>
             </div>
           </div>
-          <% end %>
         </div>
       </div>
-    </div>
 
-    <div class="about-me text-center">
-      <div class="container">
-        <h1>About me</h1>
-        <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
-        <p>Thr</p>
-
-      </div>
-    </div>
-
-
-
-<!-- skills -->
-    <div class="wrapper-fixed" style="background: linear-gradient(-225deg, rgba(0,0,31,1) 0%, rgba(0,0,21,0.8)30%), url(images/fotobrug.jpg) fixed">
-      <div class="container skills">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <h2>Front-end</h2>
-            <p>HTML & CSS3</p>
-            <p>JavaScript, jQuery & React.js</p>
-            <p>Bootstrap</p>
-            <p>UX/UI best practices</p>
+      <div class="wrapper-grey-padded">
+        <div class="container">
+          <h2 class="text-center">Projects</h2>
+          <div class="row">
+            <% data.flats.each do |owner, flat| %>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path flat.picture %>');">
+                <div class="card-category"><%= flat.city %></div>
+                <div class="card-description">
+                  <h2><%= flat.name %></h2>
+                  <p><%= flat.summary %></p>
+                </div>
+                <%= link_to "flats/#{owner}.html", "flats/#{owner}.html", class: "card-link" %>
+              </div>
+            </div>
+            <% end %>
           </div>
+        </div>
 
-          <div class="col-xs-12 col-sm-4 text-center">
-            <h2>Back-end</h2>
-            <p>Ruby</p>
-            <p>Ruby on Rails</p>
-            <p>SQL</p>
-            <p>PostgreSQL</p>
-            <p>APIs</p>
-          </div>
-
-          <div class="col-xs-12 col-sm-4 text-center">
-            <h2>Tools</h2>
-            <p>Command lines</p>
-            <p>Sublime text</p>
-            <p>git</p>
-            <p>GitHub</p>
-            <p>Sketch</p>
-            <p>Heroku</p>
-            <p>Amazon S3</p>
+        <div class="about-me text-center">
+          <div class="container">
+          <a name="about-me">
+            <h1>About me</h1>
+            </a>
+            <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
+            <p>Thr</p>
           </div>
         </div>
       </div>
-    </div>
 
 
 
+      <!-- skills -->
+      <div class="wrapper-fixed" style="background: linear-gradient(-225deg, rgba(0,0,31,1) 0%, rgba(0,0,21,0.8)30%), url(images/fotobrug.jpg) fixed">
+        <div class="container skills">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <h2>Front-end</h2>
+              <p>HTML & CSS3</p>
+              <p>JavaScript, jQuery & React.js</p>
+              <p>Bootstrap</p>
+              <p>UX/UI best practices</p>
+            </div>
 
-    <div id="map" style="width: 100%; height: 400px;"></div>
+            <div class="col-xs-12 col-sm-4 text-center">
+              <h2>Back-end</h2>
+              <p>Ruby</p>
+              <p>Ruby on Rails</p>
+              <p>SQL</p>
+              <p>PostgreSQL</p>
+              <p>APIs</p>
+            </div>
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+            <div class="col-xs-12 col-sm-4 text-center">
+              <h2>Tools</h2>
+              <p>Command lines</p>
+              <p>Sublime text</p>
+              <p>git</p>
+              <p>GitHub</p>
+              <p>Sketch</p>
+              <p>Heroku</p>
+              <p>Amazon S3</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script type="text/javascript">
-      var myLatlng = new google.maps.LatLng(52.3710367,4.8849993,17);
-      var myOptions = {
-        zoom: 15,
-        center: myLatlng,
-        scrollwheel: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: [{
-          "featureType": "administrative",
-          "elementType": "labels",
-          "stylers": [{
-            "visibility": "off"}]},
-            {"featureType": "administrative.country",
-            "elementType": "geometry.stroke",
-            "stylers": [{"visibility": "off"}]},
-            {"featureType": "administrative.province",
-            "elementType": "geometry.stroke",
+      <div class="wrapper-grey-padded">
+      <div class="work-experience text-center">
+        <div class="container">
+          <h1>Work experience</h1>
+          <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
+          <p>Thr</p>
+        </div>
+      </div>
+
+      <div class="education-first text-center">
+        <div class="container">
+          <h1>Education</h1>
+          <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
+          <p>Thr</p>
+        </div>
+      </div>
+
+
+      <div id="map" style="width: 100%; height: 400px;"></div>
+
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+      <script type="text/javascript">
+        var myLatlng = new google.maps.LatLng(52.3710367,4.8849993,17);
+        var myOptions = {
+          zoom: 15,
+          center: myLatlng,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          styles: [{
+            "featureType": "administrative",
+            "elementType": "labels",
             "stylers": [{
               "visibility": "off"}]},
-              {"featureType": "administrative.locality",
-              "elementType": "labels.text",
-              "stylers": [{"visibility": "on"}]},
-              {"featureType": "landscape",
-              "elementType": "geometry",
-              "stylers": [{"visibility": "on"},
-              {"color": "#e3e3e3"}]},
-              {"featureType": "landscape.natural",
-              "elementType": "labels",
+              {"featureType": "administrative.country",
+              "elementType": "geometry.stroke",
               "stylers": [{"visibility": "off"}]},
-              {"featureType": "poi",
-              "elementType": "all",
-              "stylers": [{"visibility": "off"}]},
-              {"featureType": "road",
-              "elementType": "all",
-              "stylers": [{"color": "#cccccc"}]},
-              {"featureType": "road",
-              "elementType": "labels",
+              {"featureType": "administrative.province",
+              "elementType": "geometry.stroke",
               "stylers": [{
                 "visibility": "off"}]},
-                {"featureType": "transit",
-                "elementType": "labels.icon",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "transit.line",
-                "elementType": "geometry",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "transit.line",
+                {"featureType": "administrative.locality",
                 "elementType": "labels.text",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "transit.station.airport",
+                "stylers": [{"visibility": "on"}]},
+                {"featureType": "landscape",
                 "elementType": "geometry",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "transit.station.airport",
+                "stylers": [{"visibility": "on"},
+                {"color": "#e3e3e3"}]},
+                {"featureType": "landscape.natural",
                 "elementType": "labels",
                 "stylers": [{"visibility": "off"}]},
-                {"featureType": "water",
-                "elementType": "geometry",
-                "stylers": [{"color": "#FFFFFF"}]},
-                {"featureType": "water",
+                {"featureType": "poi",
+                "elementType": "all",
+                "stylers": [{"visibility": "off"}]},
+                {"featureType": "road",
+                "elementType": "all",
+                "stylers": [{"color": "#cccccc"}]},
+                {"featureType": "road",
                 "elementType": "labels",
-                "stylers": [{"visibility": "off"}]}]};
+                "stylers": [{
+                  "visibility": "off"}]},
+                  {"featureType": "transit",
+                  "elementType": "labels.icon",
+                  "stylers": [{"visibility": "off"}]},
+                  {"featureType": "transit.line",
+                  "elementType": "geometry",
+                  "stylers": [{"visibility": "off"}]},
+                  {"featureType": "transit.line",
+                  "elementType": "labels.text",
+                  "stylers": [{"visibility": "off"}]},
+                  {"featureType": "transit.station.airport",
+                  "elementType": "geometry",
+                  "stylers": [{"visibility": "off"}]},
+                  {"featureType": "transit.station.airport",
+                  "elementType": "labels",
+                  "stylers": [{"visibility": "off"}]},
+                  {"featureType": "water",
+                  "elementType": "geometry",
+                  "stylers": [{"color": "#FFFFFF"}]},
+                  {"featureType": "water",
+                  "elementType": "labels",
+                  "stylers": [{"visibility": "off"}]}]};
 
-                var map = new google.maps.Map(document.getElementById('map'), myOptions);
-                var marker = new google.maps.Marker({
-                  position: myLatlng,
-                  map: map,
-                  title: "This is the place"
-                });
-              </script>
+                  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+                  var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: "This is the place"
+                  });
+                </script>
 
-              <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h3 class="section-title">Contact</h3>
-            <div class="section-title-border"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
-            <p>
-              Messages sent with this contact form go directly into my inbox. It is the best way to contact me.
-            </p>
-            <p>
-              I am based in Europe and available for remote freelance work.
-            </p>
+                <!-- Contact -->
+                <section id="contact" class="section">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                        <h3 class="section-title">Contact</h3>
+                        <div class="section-title-border"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
+                        <p>
+                          Messages sent with this contact form go directly into my inbox. It is the best way to contact me.
+                        </p>
+                        <p>
+                          I am based in Europe and available for remote freelance work.
+                        </p>
             <!-- <ul class="list-contacts">
               <li><i class="fa fa-phone"></i> (123) 456-7890</li>
               <li><i class="fa fa-mobile-phone"></i> (123) 987-6543</li>
@@ -243,13 +242,8 @@
               </div>
               <input type="text" name="_gotcha" style="display:none" />
             </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  </body>
-  </html>

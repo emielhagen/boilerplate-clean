@@ -4,8 +4,4 @@
 $(function () {
   "use strict";
 
-$.backstretch([
-    "images/fotobrug.jpg"
-  ], {duration: 3800, fade: 1500});
-
 });

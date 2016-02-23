@@ -6,6 +6,7 @@
   justify-content: center;
   height: 100vh;
   color: white;
+  font-family: helvetica;
   background-size: cover !important;
 }
 
@@ -22,6 +23,10 @@
   font-size: 25px;
 }
 
+.about-me {
+  text-decoration: none;
+}
+
 .about:hover {
   color: #A61B1B;
   transition: color 300ms;
@@ -29,7 +34,6 @@
 
 .workex:hover {
   color: #A61B1B;
-  transition: color 300ms;
 }
 
 .education:hover {
@@ -47,3 +51,5 @@
 .skills {
   color: white;
 }
+
+
