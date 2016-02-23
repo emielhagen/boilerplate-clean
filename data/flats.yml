@@ -1,0 +1,33 @@
+emiel:
+  owner: emiel
+  owner_name: Emiel Hagen
+  picture: https://goo.gl/QFsYH3
+  owner_picture: https://goo.gl/Ke4YJh
+  name: Emiel's home
+  summary: Charming room in Amsterdam
+  city: Amsterdam, Netherlands
+  banner: https://c1.staticflickr.com/9/8671/16686305819_0733c8d11c_c.jpg
+  wifi: true
+  rating: 4
+romain:
+  owner: romain
+  owner_name: Romain Paillard
+  picture: https://goo.gl/SgXLzQ
+  owner_picture: https://unsplash.it/150/150/?random=5
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  banner: https://c2.staticflickr.com/8/7561/15278876863_60fc7b9d32_b.jpg
+  wifi: false
+  rating: 3
+henk:
+  owner: henk
+  owner_name: Henk Jansen
+  picture: https://goo.gl/3udzdJ
+  owner_picture: https://unsplash.it/150/150/?random=6
+  name: Henk's home
+  summary: Charming room in Rio
+  city: Rio de Janeiro, Brazil
+  banner: https://c1.staticflickr.com/9/8195/8137178410_047fab9859_c.jpg
+  wifi: true
+  rating: 1
