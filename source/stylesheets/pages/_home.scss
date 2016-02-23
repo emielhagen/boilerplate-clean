@@ -11,6 +11,11 @@
 
 .banner h1 {
   font-size: 50px;
+  transition: font-size 200ms ease;
+}
+
+.banner h1:hover {
+  font-size: 52px;
 }
 
 .banner p {
@@ -30,4 +35,15 @@
 .education:hover {
   color: #A61B1B;
   transition: color 300ms;
+}
+
+
+// skills //
+.wrapper-fixed {
+  background-size: cover !important;
+  padding: 30px;
+}
+
+.skills {
+  color: white;
 }

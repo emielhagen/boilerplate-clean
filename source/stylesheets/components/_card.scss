@@ -1,11 +1,11 @@
 .card {
-    height: 220px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    background-size: cover !important;
-    color: white;
-    position: relative;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  height: 220px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .card-category {
@@ -20,22 +20,16 @@
   bottom: 20px;
 }
 
-.card-user {
+.card-link {
   position: absolute;
-  right: 5px;
-  top: 5px;
-}
-
-  .card-link {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 2;
-    background: black;
-    opacity: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
 }
 
 .card-link:hover {
-    opacity: 0.1;
+  opacity: 0.1;
 }
