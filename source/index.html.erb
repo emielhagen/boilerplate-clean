@@ -1,4 +1,4 @@
-      <div class="banner" style="background: linear-gradient(-225deg, rgba(0,0,31,0.8) 0%, rgba(0,0,21,0.8) 30%), url(images/fotobrug.jpg) fixed">
+      <div class="banner" id="no-gradient" style="background: url(images/macbookfish.jpg) fixed">
         <div class="banner-content">
           <h1>Emiel Hagen</h1>
           <p>Fullstack webdeveloper</p>
@@ -6,40 +6,53 @@
       </div>
 
       <div class="wrapper-light-gray">
-        <div class="container padded">
+        <div class="container padded text-center">
           <div class="row">
-            <div class="features text-center">
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="about">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <div class="about">
                 <a href="#about-me">
                   <i class="fa fa-child fa-3x"></i>
                   <h2>About me</h2>
-                  </a>
-                </div>
+                </a>
               </div>
-              <div class="workex">
-                <div class="col-xs-12 col-sm-4 col-md-4">
+            </div>
+            <div class="workex">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <a href="#workex">
                   <i class="fa fa-briefcase fa-3x"></i>
                   <h2>Work Experience</h2>
-                </div>
+                </a>
               </div>
-              <div class="education">
-                <div class="col-xs-12 col-sm-4 col-md-4">
+            </div>
+            <div class="education">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <a href="#education">
                   <i class="fa fa-graduation-cap fa-3x"></i>
                   <h2>Education</h2>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="twisted">
+        <div class="container">
+          <p>This is truly the most amazing <a href="http://emielhagen.github.io/boilerplate-portfolio" target="blank_">portfolio </a>website I have ever seen!</p>
+          <p>-Every smart man ever -</p>
+        </div>
+      </div>
+
       <div class="wrapper-grey-padded">
         <div class="container">
-          <h2 class="text-center">Projects</h2>
+          <div class="sandbox sandbox-correct-pronounciation">
+            <h1 class="heading heading-correct-pronounciation">
+            <span>Projects</span>
+            </h1>
+          </div>
           <div class="row">
             <% data.flats.each do |owner, flat| %>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
               <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path flat.picture %>');">
                 <div class="card-category"><%= flat.city %></div>
                 <div class="card-description">
@@ -55,56 +68,64 @@
 
         <div class="about-me text-center">
           <div class="container">
-          <a name="about-me">
-            <h1>About me</h1>
-            </a>
-            <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
-            <p>Thr</p>
+            <a name="about-me">
+             <div class="sandbox sandbox-correct-pronounciation">
+              <h1 class="heading heading-correct-pronounciation">
+                <span>About me</span>
+              </h1>
+            </div>
+          </a>
+          <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
+          <p>Thr</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- skills -->
+    <div class="wrapper-fixed" style="background: linear-gradient(-125deg, rgba(218, 210, 153, 0.4), rgba(176, 218, 185, 0.4)), url(images/fotobrug.jpg) fixed">
+      <div class="container skills">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 text-center">
+            <h2>Front-end</h2>
+            <p>HTML & CSS3</p>
+            <p>JavaScript, jQuery & React.js</p>
+            <p>Bootstrap</p>
+            <p>UX/UI best practices</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 text-center">
+            <h2>Back-end</h2>
+            <p>Ruby</p>
+            <p>Ruby on Rails</p>
+            <p>SQL</p>
+            <p>PostgreSQL</p>
+            <p>APIs</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 text-center">
+            <h2>Tools</h2>
+            <p>Command lines</p>
+            <p>Sublime text</p>
+            <p>git</p>
+            <p>GitHub</p>
+            <p>Sketch</p>
+            <p>Heroku</p>
+            <p>Amazon S3</p>
           </div>
         </div>
       </div>
+    </div>
 
-
-
-      <!-- skills -->
-      <div class="wrapper-fixed" style="background: linear-gradient(-225deg, rgba(0,0,31,1) 0%, rgba(0,0,21,0.8)30%), url(images/fotobrug.jpg) fixed">
-        <div class="container skills">
-          <div class="row">
-            <div class="col-xs-12 col-sm-4">
-              <h2>Front-end</h2>
-              <p>HTML & CSS3</p>
-              <p>JavaScript, jQuery & React.js</p>
-              <p>Bootstrap</p>
-              <p>UX/UI best practices</p>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 text-center">
-              <h2>Back-end</h2>
-              <p>Ruby</p>
-              <p>Ruby on Rails</p>
-              <p>SQL</p>
-              <p>PostgreSQL</p>
-              <p>APIs</p>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 text-center">
-              <h2>Tools</h2>
-              <p>Command lines</p>
-              <p>Sublime text</p>
-              <p>git</p>
-              <p>GitHub</p>
-              <p>Sketch</p>
-              <p>Heroku</p>
-              <p>Amazon S3</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="wrapper-grey-padded">
+    <div class="wrapper-grey-padded">
       <div class="work-experience text-center">
         <div class="container">
-          <h1>Work experience</h1>
+          <a name="workex">
+            <div class="sandbox sandbox-correct-pronounciation">
+              <h1 class="heading heading-correct-pronounciation">
+                <span>Work experience</span>
+              </h1>
+            </div>
+          </a>
           <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
           <p>Thr</p>
         </div>
@@ -112,15 +133,20 @@
 
       <div class="education-first text-center">
         <div class="container">
-          <h1>Education</h1>
+          <a name="education">
+            <div class="sandbox sandbox-correct-pronounciation">
+              <h1 class="heading heading-correct-pronounciation">
+                <span>Education</span>
+              </h1>
+            </div>
+          </a>
           <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
           <p>Thr</p>
         </div>
       </div>
 
-
+      <!-- map -->
       <div id="map" style="width: 100%; height: 400px;"></div>
-
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
       <script type="text/javascript">
@@ -160,90 +186,34 @@
                 "stylers": [{"color": "#cccccc"}]},
                 {"featureType": "road",
                 "elementType": "labels",
-                "stylers": [{
-                  "visibility": "off"}]},
-                  {"featureType": "transit",
-                  "elementType": "labels.icon",
-                  "stylers": [{"visibility": "off"}]},
-                  {"featureType": "transit.line",
-                  "elementType": "geometry",
-                  "stylers": [{"visibility": "off"}]},
-                  {"featureType": "transit.line",
-                  "elementType": "labels.text",
-                  "stylers": [{"visibility": "off"}]},
-                  {"featureType": "transit.station.airport",
-                  "elementType": "geometry",
-                  "stylers": [{"visibility": "off"}]},
-                  {"featureType": "transit.station.airport",
-                  "elementType": "labels",
-                  "stylers": [{"visibility": "off"}]},
-                  {"featureType": "water",
-                  "elementType": "geometry",
-                  "stylers": [{"color": "#FFFFFF"}]},
-                  {"featureType": "water",
-                  "elementType": "labels",
-                  "stylers": [{"visibility": "off"}]}]};
+                "stylers": [{"visibility": "off"}]},
+                {"featureType": "transit",
+                "elementType": "labels.icon",
+                "stylers": [{"visibility": "off"}]},
+                {"featureType": "transit.line",
+                "elementType": "geometry",
+                "stylers": [{"visibility": "off"}]},
+                {"featureType": "transit.line",
+                "elementType": "labels.text",
+                "stylers": [{"visibility": "off"}]},
+                {"featureType": "transit.station.airport",
+                "elementType": "geometry",
+                "stylers": [{"visibility": "off"}]},
+                {"featureType": "transit.station.airport",
+                "elementType": "labels",
+                "stylers": [{"visibility": "off"}]},
+                {"featureType": "water",
+                "elementType": "geometry",
+                "stylers": [{"color": "#FFFFFF"}]},
+                {"featureType": "water",
+                "elementType": "labels",
+                "stylers": [{"visibility": "off"}]}]};
 
-                  var map = new google.maps.Map(document.getElementById('map'), myOptions);
-                  var marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: "This is the place"
-                  });
-                </script>
+                var map = new google.maps.Map(document.getElementById('map'), myOptions);
+                var marker = new google.maps.Marker({
+                  position: myLatlng,
+                  map: map,
+                  title: "This is the place"
+                });
+              </script>
 
-                <!-- Contact -->
-                <section id="contact" class="section">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6">
-                        <h3 class="section-title">Contact</h3>
-                        <div class="section-title-border"></div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
-                        <p>
-                          Messages sent with this contact form go directly into my inbox. It is the best way to contact me.
-                        </p>
-                        <p>
-                          I am based in Europe and available for remote freelance work.
-                        </p>
-            <!-- <ul class="list-contacts">
-              <li><i class="fa fa-phone"></i> (123) 456-7890</li>
-              <li><i class="fa fa-mobile-phone"></i> (123) 987-6543</li>
-              <li><i class="fa fa-map-marker"></i> 1795 Folsom Ave, Suite 600<br> San Francisco, CA 94107</li>
-              <li><i class="fa fa-envelope-o"></i> <a href="mailto:emiel.hagen@gmail.com">emiel.hagen@gmail.com</a></li>
-            </ul> -->
-          </div>
-          <div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
-            <!-- <form class="form-horizontal" action="assets/php/contactForm.php" method="post" role="form" id="contactForm"> -->
-            <form class="form-horizontal" action="https://formspree.io/emiel.hagen@gmail.com" method="post" role="form" id="contactForm">
-              <div class="form-group">
-                <div class="col-sm-6">
-                  <input type="text" name="name" class="form-control" placeholder="Name">
-                </div>
-                <div class="col-sm-6">
-                  <input type="text" name="contactEmail" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <textarea name="message" class="form-control" rows="8" placeholder="Message"></textarea>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <input type="text" name="_gotcha" style="display:none">
-                  <button type="submit" class="btn btn-theme ladda-button" data-style="expand-left">
-                    <span class="ladda-label">Submit</span>
-                  </button>
-                </div>
-              </div>
-              <input type="text" name="_gotcha" style="display:none" />
-            </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
