@@ -1,15 +1,33 @@
 /* Banner designs */
 .banner {
+  background-image: url("/images/205H.jpg");
+  background-position: fixed;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 100vh;
   color: white;
   font-family: helvetica;
-  background-size: cover !important;
-  background-position: center;
+  height: 500px;
 }
+
+.banner img {
+  width: 100%;
+}
+
+.banner h1 {
+  font-size: 50px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.banner-content p {
+  font-size: 25px;
+  border: 3px solid white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  color: white;
+  font-weight: bold;
+}
+
 
 #no-gradient {
   width: 100%;
@@ -23,28 +41,17 @@
   background-size: cover !important;
 }
 
-.coffee h1,
-.coffee h2 {
+.coffee h1 {
   font-family: 'Pacifico', cursive;
   color: white;
   text-align: right;
 }
 
-.banner h1 {
-  font-size: 50px;
-  text-shadow:
-    1px 1px #282828,
-    1px -1px #282828,
-    -1px 1px #282828,
-    -1px -1px #282828;
+.coffee h2 {
+  font-family: helvetica;
+  color: white;
+  text-align: right;
 }
-
-.banner-content p {
-  font-size: 25px;
-  border: 3px solid white;
-  color: #878787;
-}
-
 
 // skills //
 .wrapper-fixed {

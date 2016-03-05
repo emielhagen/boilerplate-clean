@@ -34,4 +34,32 @@
   opacity: 0.1;
 }
 
+.card-information {
+  position: relative;
+  height: 300px;
+  width: 800px;
+  color: #F0F0F0;
+  background-color: #131B23;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.card-information img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.card-information p {
+  position: absolute;
+  left: 40px;
+  margin-top: 15px;
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.info-title h1 {
+  text-align: center;
+}
+
 
