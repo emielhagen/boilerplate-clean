@@ -12,15 +12,15 @@
               <div class="about">
                 <a href="#about-me">
                   <i class="fa fa-child fa-3x"></i>
-                  <h2>About me</h2>
+                  <h2>About</h2>
                 </a>
               </div>
             </div>
             <div class="workex">
               <div class="col-xs-12 col-sm-4 col-md-4">
-                <a href="#workex">
+                <a href="#work-ex">
                   <i class="fa fa-briefcase fa-3x"></i>
-                  <h2>Work Experience</h2>
+                  <h2>Work</h2>
                 </a>
               </div>
             </div>
@@ -45,43 +45,39 @@
 
       <div class="wrapper-grey-padded">
         <div class="container">
-          <h1> Projects</h1>
+          <h1> Project</h1>
           <div class="row">
-            <% data.flats.each do |owner, flat| %>
             <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
-              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path flat.picture %>');">
-                <div class="card-category"><%= flat.city %></div>
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://goo.gl/QFsYH3');">
+                <div class="card-category"><p>Amsterdam</p></div>
                 <div class="card-description">
-                  <h2><%= flat.name %></h2>
-                  <p><%= flat.summary %></p>
+                  <h2>ActivityDuck</h2>
+                  <p>First group project</p>
                 </div>
-                <%= link_to "flats/#{owner}.html", "flats/#{owner}.html", class: "card-link" %>
+                <%= link_to "a", "http://www.ActivityDuck.com", class: "card-link" %>
               </div>
             </div>
-            <% end %>
           </div>
         </div>
       </div>
 
-      <div class="container">
-        <a name="about-me" class="info-title"><h1>About</h1></a>
-        <div class="row">
-          <div class="col-sm-5 col-sm-offset-2">
-            <div class="card-information">
-              <div class="row">
-                <img src="images/portugalpic.jpg" class="avatar-large" alt="">
-                <div class="col-sm-10 col-sm-offset-2">
-                  <p>I am a software developer who likes to built web applications with ruby on rails. During multiple self study courses online I realized that coding suits me very well. In order to accelerate my knowledge of coding I enrolled in the coding bootcamp of Le Wagon. Before enrolling in the Le Wagon coding bootcamp I finished my master in business administration. This master was really interesting and I've learned a lot in many aspects of doing business, but I felt I missed some specific skills. In today's business environment, I believe being able to code is a huge advantage. That is why I immediately enrolled in the Le Wagon bootcamp as soon as I got the chance. Now that this course is coming to an end I feel confident that coding is what I want to develop further. Therefore I am looking for an interesting traineeship where this is possible!
-                  </p>
-                </div>
-              </div>
-            </div>
+      <div class="wrapper-white padded">
+        <div class="container">
+        <div class="big-title-first">
+            <a name="about-me" class="info-title"><h1>About</h1></a>
           </div>
+          <div class="card-information">
+            <p>I am a software developer who likes to built web applications with ruby on rails. During multiple self study courses online I realized that coding suits me very well. In order to accelerate my knowledge of coding I enrolled in the coding bootcamp of Le Wagon. Before enrolling in the Le Wagon coding bootcamp I finished my master in business administration. This master was really interesting and I've learned a lot in many aspects of doing business, but I felt I missed some specific skills. In today's business environment, I believe being able to code is a huge advantage. That is why I immediately enrolled in the Le Wagon bootcamp as soon as I got the chance. Now that this course is coming to an end I feel confident that coding is what I want to develop further. Therefore I am looking for an interesting traineeship where this is possible!
+            </p>
+          </div>
+
+
         </div>
       </div>
+
 
       <!-- skills -->
-      <div class="wrapper-fixed" style="background: linear-gradient(-125deg, rgba(218, 210, 153, 0.4), rgba(176, 218, 185, 0.4)), url(images/fotobrug.jpg) fixed">
+      <div class="wrapper-fixed" style="background: linear-gradient(-125deg, rgba(224, 302, 74, 0.7), rgba(176, 218, 185, 0.7)), url(images/fotobrug.jpg) fixed">
         <div class="container skills">
           <div class="row">
             <div class="col-xs-12 col-sm-4 text-center">
@@ -104,10 +100,8 @@
             <div class="col-xs-12 col-sm-4 text-center">
               <h2>Tools</h2>
               <p>Command lines</p>
-              <p>Sublime text</p>
               <p>git</p>
               <p>GitHub</p>
-              <p>Sketch</p>
               <p>Heroku</p>
               <p>Amazon S3</p>
             </div>
@@ -115,104 +109,152 @@
         </div>
       </div>
 
-
       <div class="container">
-        <a name="work-ex" class="info-title"><h1>Work</h1></a>
-        <div class="row">
-          <div class="col-sm-5 col-sm-offset-2">
-            <div class="card-information">
-              <div class="col-sm-10 col-sm-offset-2">
-                <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
-                <p>Thr</p>
+        <div class="big-title">
+          <a name="education" class="info-title"><h1>Education</h1></a>
+        </div>
+        <div class="card-information">
+          <div class="card-information-title">
+            <p>January 2016 - present Le Wagon Coding Bootcamp</p>
+          </div>
+          <div class="card-information-content">
+            <p>Intensive 3-month coding program with emphasis on Ruby &
+              Ruby on rails. It is a full stack program which touches all
+              aspects from the database to the browser: HTML, CSS,
+              Javascript, SQL, AWS, Heroku, etc.</p>
+              <hr>
+            </div>
+            <div class="card-information-title">
+              <p>September 2014 – July 2015 VU University Amsterdam</p>
+            </div>
+            <div class="card-information-content">
+              <p>Master Business administration, Strategy & Organizations. Master’s thesis topic: Legitimacy of organizations
+                introducing disruptive innovations, as perceived by
+                stakeholders in different national contexts</p>
+                <hr>
+              </div>
+              <div class="card-information-title">
+                <p>June 2013 – August 2013 International Summer University Program, Copenhagen</p>
+              </div>
+              <div class="card-information-content">
+                <p>Global finance and World markets; Competing in
+                  the global Marketplace, the consultant’s perspective</p>
+                  <hr>
+                </div>
+                <div class="card-information-title">
+                  <p>September 2007 – May 2012 University of Applied Sciences, Utrecht</p>
+                </div>
+                <div class="card-information-content">
+                  <p>Commerce, specialization sales & marketing</p>
+                  <hr>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="container">
-        <a name="education" class="info-title"><h1>Education</h1></a>
-        <div class="row">
-          <div class="col-sm-5 col-sm-offset-2">
-            <div class="card-information">
-              <div class="col-sm-10 col-sm-offset-2">
-                <p>I'm a software developer who likes to build web applications with Ruby on Rails.</p>
-                <p>Thr</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- map -->
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
-      <!-- map -->
-      <div id="map" style="width: 100%; height: 400px;"></div>
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+            <script type="text/javascript">
+              var myLatlng = new google.maps.LatLng(52.3710367,4.8849993,17);
+              var myOptions = {
+                zoom: 15,
+                center: myLatlng,
+                scrollwheel: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{
+                  "featureType": "administrative",
+                  "elementType": "labels",
+                  "stylers": [{
+                    "visibility": "off"}]},
+                    {"featureType": "administrative.country",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"visibility": "off"}]},
+                    {"featureType": "administrative.province",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                      "visibility": "off"}]},
+                      {"featureType": "administrative.locality",
+                      "elementType": "labels.text",
+                      "stylers": [{"visibility": "on"}]},
+                      {"featureType": "landscape",
+                      "elementType": "geometry",
+                      "stylers": [{"visibility": "on"},
+                      {"color": "#e3e3e3"}]},
+                      {"featureType": "landscape.natural",
+                      "elementType": "labels",
+                      "stylers": [{"visibility": "off"}]},
+                      {"featureType": "poi",
+                      "elementType": "all",
+                      "stylers": [{"visibility": "off"}]},
+                      {"featureType": "road",
+                      "elementType": "all",
+                      "stylers": [{"color": "#cccccc"}]},
+                      {"featureType": "road",
+                      "elementType": "labels",
+                      "stylers": [{"visibility": "off"}]},
+                      {"featureType": "transit",
+                      "elementType": "labels.icon",
+                      "stylers": [{"visibility": "off"}]},
+                      {"featureType": "transit.line",
+                      "elementType": "geometry",
+                      "stylers": [{"visibility": "off"}]},
+                      {"featureType": "transit.line",
+                      "elementType": "labels.text",
+                      "stylers": [{"visibility": "off"}]},
+                      {"featureType": "transit.station.airport",
+                      "elementType": "geometry",
+                      "stylers": [{"visibility": "off"}]},
+                      {"featureType": "transit.station.airport",
+                      "elementType": "labels",
+                      "stylers": [{"visibility": "off"}]},
+                      {"featureType": "water",
+                      "elementType": "geometry",
+                      "stylers": [{"color": "#FFFFFF"}]},
+                      {"featureType": "water",
+                      "elementType": "labels",
+                      "stylers": [{"visibility": "off"}]}]};
 
-      <script type="text/javascript">
-        var myLatlng = new google.maps.LatLng(52.3710367,4.8849993,17);
-        var myOptions = {
-          zoom: 15,
-          center: myLatlng,
-          scrollwheel: false,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          styles: [{
-            "featureType": "administrative",
-            "elementType": "labels",
-            "stylers": [{
-              "visibility": "off"}]},
-              {"featureType": "administrative.country",
-              "elementType": "geometry.stroke",
-              "stylers": [{"visibility": "off"}]},
-              {"featureType": "administrative.province",
-              "elementType": "geometry.stroke",
-              "stylers": [{
-                "visibility": "off"}]},
-                {"featureType": "administrative.locality",
-                "elementType": "labels.text",
-                "stylers": [{"visibility": "on"}]},
-                {"featureType": "landscape",
-                "elementType": "geometry",
-                "stylers": [{"visibility": "on"},
-                {"color": "#e3e3e3"}]},
-                {"featureType": "landscape.natural",
-                "elementType": "labels",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "poi",
-                "elementType": "all",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "road",
-                "elementType": "all",
-                "stylers": [{"color": "#cccccc"}]},
-                {"featureType": "road",
-                "elementType": "labels",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "transit",
-                "elementType": "labels.icon",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "transit.line",
-                "elementType": "geometry",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "transit.line",
-                "elementType": "labels.text",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "transit.station.airport",
-                "elementType": "geometry",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "transit.station.airport",
-                "elementType": "labels",
-                "stylers": [{"visibility": "off"}]},
-                {"featureType": "water",
-                "elementType": "geometry",
-                "stylers": [{"color": "#FFFFFF"}]},
-                {"featureType": "water",
-                "elementType": "labels",
-                "stylers": [{"visibility": "off"}]}]};
+                      var map = new google.maps.Map(document.getElementById('map'), myOptions);
+                      var marker = new google.maps.Marker({
+                        position: myLatlng,
+                        map: map,
+                        title: "This is the place"
+                      });
+                    </script>
 
-                var map = new google.maps.Map(document.getElementById('map'), myOptions);
-                var marker = new google.maps.Marker({
-                  position: myLatlng,
-                  map: map,
-                  title: "This is the place"
-                });
-              </script>
+                    <div class="container">
+                      <div class="big-title">
+                        <a name="work-ex" class="info-title"><h1>Work</h1></a>
+                      </div>
+                      <div class="card-information">
+                        <div class="card-information-title">
+                          <p>Budget Energie</p>
+                        </div>
+                        <div class="card-information-content">
+                          <p>Providing service to customers before, during, and after a
+                            purchase.</p>
+                            <hr>
+                          </div>
+                          <div class="card-information-title">
+                            <p>Technical support engineer KPN</p>
+                          </div>
+                          <div class="card-information-content">
+                            <p>In addition to addressing customer inquiries, concerns and
+                              suggestions, I focused on technical difficulties with products,
+                              brought up by other departments within the organization.</p>
+                              <hr>
+                            </div>
+                            <div class="card-information-title">
+                              <p>Graduation internship Empire Promotions, Curaçao</p>
+                            </div>
+                            <div class="card-information-content">
+                              <p>Wrote a strategic marketing plan for penetrating foreign
+                                markets. Organized and executed a sales project regarding
+                                BIC products.</p>
+                                <hr>
+                              </div>
+                            </div>
+                          </div>
+
 

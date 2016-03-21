@@ -1,14 +1,8 @@
 emiel:
-  owner: emiel
-  owner_name: Emiel Hagen
   picture: https://goo.gl/QFsYH3
-  owner_picture: https://goo.gl/Ke4YJh
-  name: Emiel's home
-  summary: Charming room in Amsterdam
+  name: ActivityDuck
+  summary: First group project
   city: Amsterdam, Netherlands
-  banner: https://c1.staticflickr.com/9/8671/16686305819_0733c8d11c_c.jpg
-  wifi: true
-  rating: 4
 romain:
   owner: romain
   owner_name: Romain Paillard

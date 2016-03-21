@@ -10,14 +10,19 @@
 
 .card-category {
   position: absolute;
-  left: 5px;
-  top: 5px;
+  left: 20px;
+  top: 20px;
+  opacity: 0.6;
 }
 
 .card-description {
   position: absolute;
-  left: 5px;
+  left: 20px;
   bottom: 20px;
+}
+
+.card-description p {
+  opacity: 0.6;
 }
 
 .card-link {
@@ -31,30 +36,40 @@
 }
 
 .card-link:hover {
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .card-information {
-  position: relative;
-  height: 300px;
-  width: 800px;
-  color: #F0F0F0;
-  background-color: #131B23;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: black;
   border-radius: 5px;
   margin-bottom: 50px;
 }
 
-.card-information img {
-  position: absolute;
-  left: 10px;
-  top: 10px;
+.big-title {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.big-title-first {
+  padding-bottom: 50px;
+}
+
+.card-information-title {
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.card-information-content {
+  opacity: 0.7;
 }
 
 .card-information p {
-  position: absolute;
-  left: 40px;
-  margin-top: 15px;
-  width: 80%;
+  position: relative;
+  text-align: center;
+  line-height: 2;
   word-wrap: break-word;
 }
 
