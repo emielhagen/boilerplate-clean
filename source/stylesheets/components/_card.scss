@@ -8,21 +8,17 @@
   margin-bottom: 20px;
 }
 
-.card-category {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  opacity: 0.6;
-}
-
 .card-description {
   position: absolute;
   left: 20px;
-  bottom: 20px;
 }
 
 .card-description p {
-  opacity: 0.6;
+  font-size: 24px;
+  opacity: 0.8;
+  position: absolute;
+  top: 175px;
+  left: -5px;
 }
 
 .card-link {
