@@ -8,6 +8,11 @@
   margin-bottom: 20px;
 }
 
+.card-information-about {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .card-description {
   position: absolute;
   left: 20px;
@@ -35,38 +40,13 @@
   opacity: 0;
 }
 
-.card-information {
-  margin-left: 50px;
-  margin-right: 50px;
-  color: black;
-  border-radius: 5px;
-  margin-bottom: 50px;
-}
-
 .big-title {
   padding-bottom: 50px;
   padding-top: 50px;
 }
 
 .big-title-first {
-  padding-bottom: 50px;
-}
-
-.card-information-title {
-  font-weight: bold;
-  font-size: 18px;
-  opacity: 0.8;
-}
-
-.card-information-content {
-  opacity: 0.7;
-}
-
-.card-information p {
-  position: relative;
-  text-align: center;
-  line-height: 2;
-  word-wrap: break-word;
+  padding-bottom: 30px;
 }
 
 .info-title h1 {
@@ -74,3 +54,19 @@
 }
 
 
+.card-information {
+  display: flex;
+}
+
+.card-information-title {
+  padding-left: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  flex: 1 0 auto;
+  padding-right: 25px;
+  width: 420px;
+}
+
+.educational {
+  padding-bottom: 35px;
+}
