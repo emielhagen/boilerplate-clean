@@ -5,3 +5,20 @@
   left: 10px;
   top: 10px;
 }
+
+.navbar-info {
+  text-decoration: none;
+  position: absolute;
+  color: white;
+  z-index: 1;
+  right: 10px;
+  display: flex;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.navbar-info p {
+  padding: 10px;
+}

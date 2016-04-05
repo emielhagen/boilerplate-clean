@@ -6,6 +6,7 @@
   position: relative;
   border-radius: 5px;
   margin-bottom: 20px;
+  border: 1px solid white;
 }
 
 .card-information-about {
@@ -47,9 +48,10 @@
 
 .big-title-first {
   padding-bottom: 30px;
+  padding-right: 90px;
 }
 
-.info-title h1 {
+.info-title {
   text-align: center;
 }
 
