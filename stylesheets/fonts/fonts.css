@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* line 3, /home/emielhagen/code/emielhagen/boilerplate-portfolio/source/stylesheets/fonts/fonts.scss */
+.twisted p:first-letter {
+  text-transform: uppercase; }
+
+/* line 6, /home/emielhagen/code/emielhagen/boilerplate-portfolio/source/stylesheets/fonts/fonts.scss */
+.twisted p {
+  color: white;
+  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 40px auto;
+  text-transform: lowercase;
+  line-height: 145%;
+  font-size: 14pt;
+  font-variant: small-caps; }
+
+/* line 18, /home/emielhagen/code/emielhagen/boilerplate-portfolio/source/stylesheets/fonts/fonts.scss */
+.twisted a {
+  font-style: normal;
+  font-variant: small-caps;
+  text-decoration: none;
+  color: #afafaf;
+  font-size: 14px; }
+
+/* line 29, /home/emielhagen/code/emielhagen/boilerplate-portfolio/source/stylesheets/fonts/fonts.scss */
+.sandbox-correct-pronounciation {
+  padding: 20px 0; }
+
+/* line 33, /home/emielhagen/code/emielhagen/boilerplate-portfolio/source/stylesheets/fonts/fonts.scss */
+.heading-correct-pronounciation {
+  margin: auto;
+  text-align: center;
+  position: relative; }
+
+/* line 40, /home/emielhagen/code/emielhagen/boilerplate-portfolio/source/stylesheets/fonts/fonts.scss */
+.heading-correct-pronounciation h1 {
+  color: #fff;
+  font-family: 'Cardo', serif;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  line-height: 10px; }
+
+/* line 49, /home/emielhagen/code/emielhagen/boilerplate-portfolio/source/stylesheets/fonts/fonts.scss */
+.heading-correct-pronounciation span {
+  font-family: 'EB Garamond', serif;
+  font-size: 41px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  font-style: normal;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1); }
+  /* line 59, /home/emielhagen/code/emielhagen/boilerplate-portfolio/source/stylesheets/fonts/fonts.scss */
+  .heading-correct-pronounciation span::before, .heading-correct-pronounciation span::after {
+    content: "§";
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    opacity: 0.4;
+    margin: 0 0.6em;
+    font-size: 0.5em; }
