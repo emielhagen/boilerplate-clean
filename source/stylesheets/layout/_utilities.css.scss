@@ -10,17 +10,25 @@
   padding-bottom: 5em;
 }
 
+.padding {
+  height: 30px;
+}
+
 // Backgrounds
 .wrapper-skills {
-  height: 300px;
+  height: 400px;
 }
 
 .wrapper-timeline {
   height: 500px;
 }
 
-.wrapper-projects {
-  background-color: #202020;
+.wrapper-dark-gray {
+  background-color: #181818;
   padding: 50px;
+}
+
+.wrapper-projects {
   text-align: center;
+  padding: 50px;
 }

@@ -95,8 +95,10 @@
 }
 
 .personality-title {
-  padding-top: 50px;
-  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
   color: white;
   &:first-letter{
     color: red;
@@ -110,22 +112,12 @@
   color: white;
 }
 
-.test-photo {
-  display: flex;
-  justify-content: center;
-}
-
-.test-photo img {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  border: 5px solid white;
-}
 
 .first-letter-red {
   letter-spacing: 30px;
   color: white;
   font-size: 20px;
+  text-align: center;
 }
 
 .first-letter-red:first-letter {
@@ -141,4 +133,12 @@
     color: white;
     opacity: 0.6;
   }
+}
+
+#content {
+  font-size: 10px;
+}
+
+#about-hr {
+  width: 90%;
 }

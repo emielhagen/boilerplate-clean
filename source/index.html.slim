@@ -2,28 +2,28 @@ a name="home"
 div class="banner" style="background: linear-gradient(-125deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/emielprofil2.jpg) fixed"
   div class="twisted"
     p When something is important enough, you do it even if the odds are not in your favor.
-    p '-Elon Musk-'
+    p -Elon Musk-
 
-div class="wrapper-skills" style="background: linear-gradient(-125deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/skills1.jpg)"
+div class="wrapper-dark-gray"
   div class="container"
     div class="personality"
       div class="personality-title"
         p SELF MOTIVATED
-        p Always have I been able motivate myself to get the best out of myself. It is also the reason why I got into coding. Being perseverant is a very useful characteristic when something is not working the way I want it to.
+        p id="content" Always have I been able motivate myself to get the best out of myself. It is also the reason why I got into coding. Being perseverant is a very useful characteristic when something is not working the way I want it to.
       div class="personality-title"
         p COMMUNICATOR
-        p During my academic career I have extensively been trained to communicate well. My lack in experience in coding is made up for by my experience in communicating, which I found to be a great help in coding.
+        p id="content" During my academic career I have extensively been trained to communicate well. My lack in experience in coding is made up for by my experience in communicating, which I found to be a great help in coding.
       div class="personality-title"
         p ANALYTICAL
-        p My analytical skills are developed during my master at the VU University Amsterdam. Also during several jobs I have been faced with problems that needed extensive analysis which have proved my ability to deal with difficult problems.
+        p id="content" My analytical skills are developed during my master at the VU University Amsterdam. Also during several jobs I have been faced with problems that needed extensive analysis which have proved my ability to deal with difficult problems.
 
-div class="wrapper-projects" id="projects"
+div class="wrapper-projects" id="projects" style="background: linear-gradient(-125deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/skills1.jpg)"
   div class="container"
     div class="first-letter-red"
       p PROJECTS
     hr
     div class="project-explanation"
-      p The biggest project that I have worked on and where I am most proud of is ActivityDuck. This project was started during the Le Wagon bootcamp with me and two others. Together we have created a platform where users can really easily book activities at any given location in the world. In just three weeks we managed to develop a MVP of which we are really proud.
+      p The biggest project that I have worked on and where I am most proud of is ActivityDuck. This project was started during the Le Wagon bootcamp with me and two others. Together we have created a platform where users can really easily book activities at any given location in the world. In just three weeks we managed to develop a MVP of which we are really proud. We are currently looking for seed investors to enable us to develop this further.
     div class="row"
       div class="col-sm-4"
         div class="card" style="background: url('images/Activityduck2.png')"
@@ -39,109 +39,153 @@ div class="wrapper-projects" id="projects"
         div class="card" style="background: url('images/activityduck6.png')"
 
 
-div class="wrapper-timeline" style="background: linear-gradient(-125deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/skills1.jpg)"
+div class="wrapper-dark-gray" id="timeline"
   div class="container"
+    div class="first-letter-red"
+      p MY TIMELINE
+    hr
+    div class="padding"
     div class="row"
-      div class="col-sm-6"
+      div class="col-sm-6 col-sm-offset-1"
         div class="time-line-cards"
           img src="images/cardactivity.png" id="time-line-picture"
             div class="time-line-year" = "2016"
           div class="time-line-card-title"
             p ActvityDuck
           div class="time-line-card-content"
-            p The endresult of an intensive coding bootcamp. Let me see how this will look like if I just start typing a whole lot so that it will definitely expands the box. Because of the fixed width of the card I think this will not go the way that I want it but hey, you never now, right?
+            p ActivityDuck is a platform that let's users easily book activities at any given location in the world. Currently we are looking for seed investors.
+    div class="row"
+      div class="col-xs-10 col-sm-6 col-sm-offset-7"
+        div class="time-line-cards"
+          img src="images/cardactivity4.jpg" id="time-line-picture"
+            div class="time-line-year" = "2016"
+          div class="time-line-card-title"
+            p Le Wagon
+          div class="time-line-card-content"
+            p Intensive three month coding bootcamp. Focus on Ruby and Ruby on Rails, it is a fullstack program where everything from the database to the browser is done.
+    div class="row"
+      div class="col-xs-10 col-sm-6 col-sm-offset-1"
+        div class="time-line-cards"
+          img src="images/cardactivity2.jpg" id="time-line-picture"
+            div class="time-line-year" = "2015"
+          div class="time-line-card-title"
+            p VU Amsterdam
+          div class="time-line-card-content"
+            p Master's degree in business administration. Specialized in strategy and organizations. Graduated on disruptive innovators.
+    div class="row"
+      div class="col-xs-10 col-sm-6 col-sm-offset-7"
+        div class="time-line-cards"
+          img src="images/cardactivity3.jpg" id="time-line-picture"
+            div class="time-line-year" = "2013"
+          div class="time-line-card-title"
+            p Copenhagen Business School
+          div class="time-line-card-content"
+            p International summer university program. Did two courses, one in finance, other one in business.
+    div class="row"
+      div class="col-xs-10 col-sm-6 col-sm-offset-1"
+        div class="time-line-cards"
+          img src="images/cardactivity5.jpg" id="time-line-picture"
+            div class="time-line-year" = "2012"
+          div class="time-line-card-title"
+            p University of Applied Sciences
+          div class="time-line-card-content"
+            p Bachelor's degree in marketing. Minor asset management and two internships abroad.
 
 
 
 
-
-div class="wrapper-white padded"
+div class="wrapper-white padded" style="background: linear-gradient(-125deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/skills1.jpg)"
   div class="container"
-    div class="test-photo"
-      img src="images/emielprofile.jpg" class="hidden-xs hidden-sm"
-      div class="big-title-first"
-      a name="about-me"
-      h1 class="info-title" = "About"
+    div class="first-letter-red" id="about"
+      p ABOUT
+    hr id="about-hr"
     div class="row"
       div class="cols-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2"
         div class="card-information-about"
           p I am a software developer who likes to built web applications with ruby on rails. During multiple self study courses online I realized that coding suits me very well. In order to accelerate my knowledge of coding I enrolled in the coding bootcamp of Le Wagon. Before enrolling in the Le Wagon coding bootcamp I finished my master in business administration. This master was really interesting and I've learned a lot in many aspects of doing business, but I felt I missed some specific skills. In today's business environment, I believe being able to code is a huge advantage. That is why I immediately enrolled in the Le Wagon bootcamp as soon as I got the chance. Now that this course is coming to an end I feel confident that coding is what I want to develop further. Therefore I am looking for an interesting traineeship where this is possible!
 
-div class="wrapper-skills" style="background: linear-gradient(-125deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/skills1.jpg)"
-  div class="skills" id="skills"
-    div class="skills-frontend"
-      h2 Front-end
-      p HTML & CSS3
-      p JavaScript, jQuery & React.js
-      p Bootstrap
-      p UX/UI best practices
-    div class="skills-backend"
-      h2 Back-end
-      p Ruby
-      p Ruby on Rails
-      p PostgreSQL
-      p APIs
-    div class="skills-tools"
-      h2 Tools
-      p Git
-      p GitHub
-      p Heroku
-      p Amazon S3
+div class="wrapper-dark-gray" id="education"
+  div class="container"
+    div class="first-letter-red"
+      p Education
+    hr
+    div class="educational"
+      div class="card-information"
+        div class="card-information-title"
+          p Le Wagon Coding Bootcamp, Amsterdam
+        div class="card-information-content"
+          p Intensive 3-month coding program with emphasis on Ruby & Ruby on rails. It is a full stack program which touches all aspects from the database to the browser: HTML, CSS, Javascript, SQL, AWS, Heroku, etc.
+      hr
+      div class="card-information"
+        div class="card-information-title"
+          p VU University Amsterdam
+        div class="card-information-content"
+          p Master Business administration, Strategy & Organizations. Master’s thesis topic: Legitimacy of organizations introducing disruptive innovations, as perceived by stakeholders in different national contexts.
+      hr
+      div class="card-information"
+        div class="card-information-title"
+          p International Summer University Program, Copenhagen
+        div class="card-information-content"
+          p Global finance and World markets; Competing in the global Marketplace, the consultant’s perspective.
+      hr
+      div class="card-information"
+        div class="card-information-title"
+          p University of Applied Sciences, Utrecht
+        div class="card-information-content"
+          p Commerce, specialization sales & marketing. For my graduation project I wrote a strategic marketing plan for an organization on Curacao.
 
-div class="container"
-  div class="big-title"
-    a name="education"
-    h1 class="info-title" = "Education"
-  div class="educational"
-    div class="card-information"
-      div class="card-information-title"
-        p Le Wagon Coding Bootcamp, Amsterdam
-      div class="card-information-content"
-        p Intensive 3-month coding program with emphasis on Ruby & Ruby on rails. It is a full stack program which touches all aspects from the database to the browser: HTML, CSS, Javascript, SQL, AWS, Heroku, etc.
-    hr
-    div class="card-information"
-      div class="card-information-title"
-        p VU University Amsterdam
-      div class="card-information-content"
-        p Master Business administration, Strategy & Organizations. Master’s thesis topic: Legitimacy of organizations introducing disruptive innovations, as perceived by stakeholders in different national contexts.
-    hr
-    div class="card-information"
-      div class="card-information-title"
-        p International Summer University Program, Copenhagen
-      div class="card-information-content"
-        p Global finance and World markets; Competing in the global Marketplace, the consultant’s perspective.
-    hr
-    div class="card-information"
-      div class="card-information-title"
-        p University of Applied Sciences, Utrecht
-      div class="card-information-content"
-        p Commerce, specialization sales & marketing. For my graduation project I wrote a strategic marketing plan for an organization on Curacao.
+div class="wrapper-skills padded" style="background: linear-gradient(-125deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/skills1.jpg)"
+  div class="container"
+    div class="first-letter-red"
+      p SKILLS
+    hr id="about-hr"
+    div class="skills" id="skills"
+      div class="skills-frontend"
+        h2 Front-end
+        p HTML & CSS3
+        p JavaScript, jQuery & React.js
+        p Bootstrap
+        p UX/UI best practices
+      div class="skills-backend"
+        h2 Back-end
+        p Ruby
+        p Ruby on Rails
+        p PostgreSQL
+        p APIs
+      div class="skills-tools"
+        h2 Tools
+        p Git
+        p GitHub
+        p Heroku
+        p Amazon S3
 
-div class="container"
-  div class="big-title"
-    a name="work-ex"
-    h1 class="info-title" = "Work"
-  div class="educational"
-    div class="card-information"
-      div class="card-information-title"
-        p ActivityDuck
-      div class="card-information-content"
-        p Co-founder of ActivityDuck. ActivityDuck is a platform that let's user book activities in any place in the world. It started during the coding bootcamp but quickly grew into a real company.
+div class="wrapper-dark-gray" id="work"
+  div class="container"
+    div class="first-letter-red"
+      p WORK
     hr
-    div class="card-information"
-      div class="card-information-title"
-        p Budget Energie
-      div class="card-information-content"
-        p Providing service to customers before, during, and after a purchase. Besides offering customer service, there was a strong emphasis on sales.
-    hr
-    div class="card-information"
-      div class="card-information-title"
-        p Technical support engineer KPN
-      div class="card-information-content"
-        p In addition to addressing customer inquiries, concerns and suggestions, I focused on technical difficulties with products, brought up by other departments within the organization.
-    hr
-    div class="card-information"
-      div class="card-information-title"
-        p Graduation internship Empire Promotions, Curaçao
-      div class="card-information-content"
-        p Wrote a strategic marketing plan for penetrating foreign markets. Organized and executed a sales project regarding BIC products.
+    div class="educational"
+      div class="card-information"
+        div class="card-information-title"
+          p ActivityDuck
+        div class="card-information-content"
+          p Co-founder of ActivityDuck. ActivityDuck is a platform that let's user book activities in any place in the world. Currently we are looking for seed investors.
+      hr
+      div class="card-information"
+        div class="card-information-title"
+          p Budget Energie
+        div class="card-information-content"
+          p Providing service to customers before, during, and after a purchase. Besides offering customer service, there was a strong emphasis on sales.
+      hr
+      div class="card-information"
+        div class="card-information-title"
+          p Technical support engineer KPN
+        div class="card-information-content"
+          p In addition to addressing customer inquiries, concerns and suggestions, I focused on technical difficulties with products, brought up by other departments within the organization.
+      hr
+      div class="card-information"
+        div class="card-information-title"
+          p Graduation internship Empire Promotions, Curaçao
+        div class="card-information-content"
+          p Wrote a strategic marketing plan for penetrating foreign markets. Organized and executed a sales project regarding BIC products.
+

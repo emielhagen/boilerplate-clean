@@ -12,6 +12,8 @@
 .card-information-about {
   padding-left: 50px;
   padding-right: 50px;
+  color: white;
+  opacity: 0.6;
 }
 
 .card-description {
@@ -67,6 +69,13 @@
   flex: 1 0 auto;
   padding-right: 25px;
   width: 420px;
+  color: white;
+  opacity: 0.8;
+}
+
+.card-information-content {
+  color: white;
+  opacity: 0.6;
 }
 
 .educational {
@@ -74,11 +83,12 @@
 }
 
 .time-line-cards {
-  justify-content: space-around;
   align-items: flex-start;
-  background-color: black;
+  background-color: #202020;
+  padding-top: 10px;
   width: 300px;
-  height: 250px;
+  height: 220px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   border: 1px solid grey;
@@ -86,9 +96,11 @@
 
 #time-line-picture {
   position: relative;
+  -webkit-filter: grayscale(1);
   width: 260px;
   height: 100px;
   margin-top: 10px;
+  margin-bottom: 15px;
   align-self: center;
 }
 
@@ -99,13 +111,12 @@
   top: 20px;
   color: white;
   font-size: 10px;
-  background-color: brown;
+  background-color: #161616;
   width: 40px;
   text-align: center;
 }
 
 .time-line-card-title {
-  height: 10px;
   margin-left: 20px;
   color: white;
 }
@@ -116,6 +127,7 @@
 
 .time-line-card-content {
   margin-left: 20px;
+  margin-right: 20px;
   font-size: 9px;
   color: white;
 }
