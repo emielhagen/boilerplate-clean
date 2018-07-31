@@ -16,19 +16,13 @@
   <%= stylesheet_link_tag "all" %>
   <%= javascript_include_tag  "all" %>
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- Leave those next 4 lines if you care about users using IE8 -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
+</head>
 
-    <body class="<%= page_classes %>">
+<body class="<%= page_classes %>">
 
-      <%= partial "navbar.html.slim" %>
-      <%= yield %>
-      <%= partial "footer.html.slim" %>
+  <%= partial "navbar.html.slim" %>
+  <%= yield %>
+  <%= partial "footer.html.slim" %>
 
-    </body>
-    </html>
+</body>
+</html>
